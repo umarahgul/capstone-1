@@ -1,0 +1,67 @@
+html { scroll-behavior: smooth; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;  
+    background-color: #f7f7f9;
+    width: 34%;
+    height:100vh;
+    border:solid red;
+    padding:10px;
+    overflow:scroll;
+    font-family: 'Lato';
+  }
+  
+
+header {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    border:solid red;
+    margin:10px;
+}
+
+
+
+
+#heroPage {
+   
+     background-image: url("images/mobile_intro_bg.png");
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column;
+     justify-items: start;
+     border:solid red;
+     height: 80%;
+     margin-top:10px;
+}
+
+#main {
+  background-color: #272A31;
+  background-image: url('images/pattern_bg.png');
+  background-repeat: repeat;
+  height: 60%;
+  width:100%;
+  color:#D3D3D3;
+ }
+#main_heading {
+  text-align: center;
+  padding:15px;
+}
+#divider {
+  border:solid red;
+  width:20%;
+  margin-left:38%;
+}
+.desktop{
+ display: none;
+}
