@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -44,7 +45,17 @@
             <div id="mailto"><a href="mailto:umarah.gul@gmail.com">umarah.gul@gmail.com</a></div>
         </article>
 
+        <section id="hamburgerMenu">
 
+            <img src="images/close_button.png" id="closebtn" onclick="closeNav()">
+            <ul class="popmenu-list">
+                <li onclick="closeNav()" class="menu-list"><a href="index.html" >Home</a></li>
+                <li onclick="closeNav()" class="menu-list"><a href="About.html">About</a></li>
+                
+            </ul>
+    
+    
+      </section>  
 
         <article class="about_2">
 
@@ -76,14 +87,20 @@
         </article>
 
     </section>
-
-      <section id="partners">
+   <section>
+      <div id="partners">
         <h3 id="partners">Partners</h3>
         <div class="divider"></div>
         <img src="images/partners.png">
-      </section> 
+       
+      </div> 
+      <footer class="footer">
+        <img src="images/cck-logo1.png">
+        <h4>2015 Creative Commons Korea <br> Some Rights Reserved</h4>
+    </footer>
+</section>
 
-
+<script src="script.js"></script>
 </body>
 
 </html>

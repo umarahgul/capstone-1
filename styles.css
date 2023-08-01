@@ -370,6 +370,21 @@ gap:10%;
   max-width: 100%;
   height:auto;
 }
+.footer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color:#5c5858;
+  padding:10%;
+  font-size: 0.75rem;
+}
+.footer img {
+  max-width:50%;
+  height:auto;
+
+
+}
+
 
 @media screen and (min-width: 1024px) {
 
