@@ -53,20 +53,55 @@ const speakers = [
 
 ];
 
+ let counter =0;
+// if media screen is mobile counter =1;
+//   in the function check if the counter is 1 append the first two. 
+// else append all
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the screen width
+    const screenWidth = window.innerWidth; 
+    console.log(screenWidth);
+     if (screenWidth<768)
+     {
+        counter=1;
+     }  
+     else {
+        counter=0;
+     }
+   });
+
 
 function fetauredSpeakers() {
 
-    const parentElement = document.getElementById('speakers');
-
-
-    for (let x=0; x<speakers.length; x += 1) {
+    const parentElement = document.getElementById('featured_speakers');
 
     const parent= document.createElement('section');
     parent.classList.add('speakers');
+    
+    const speakerDiv = document.createElement('div');
+    speakerDiv.classList.add('speakerDiv');
+    
+    const heading = document.createElement('h3');
+    heading.classList.add('spkrs_head');
+    heading.textContent='Featurerd Speakers';
+    speakerDiv.appendChild(heading);
+    
+
+    const divider=document.createElement('div');
+    divider.setAttribute('id','divider');
+    speakerDiv.appendChild(divider);
+
+    parentElement.appendChild(speakerDiv);
+     
+    for (let x=0; x<speakers.length; x += 1){ 
+   
+    
 
 
     const card = document.createElement('div');
     card.classList.add('card');
+    card.id='card_speaker';
     parent.appendChild(card);
 
     const image= document.createElement('img');
@@ -75,28 +110,44 @@ function fetauredSpeakers() {
     image.classList.add('Profile-image');
     card.appendChild(image);
 
+    const info_div= document.createElement('div');
+    info_div.classList.add('info_div');
+
     const name=document.createElement('h5');
     name.textContent=speakers[x].name;
     name.classList.add('name');
-    card.appendChild(name);
+    info_div.appendChild(name);
 
     const about=document.createElement('p');
     about.textContent=speakers[x].about;
-    name.classList.add('about');
-    card.appendChild(about);
+    about.classList.add('about');
+    info_div.appendChild(about);
 
-    const achieve=document.createElement('h5');
-    achieve.textContent=speakers[x].achieve;
-    name.classList.add('achieve');
-    card.appendChild(achieve);
-
+    const achieve=document.createElement('p');
+    achieve.textContent=speakers[x].achievments;
+    achieve.classList.add('achieve');
+    info_div.appendChild(achieve);
+   
+    if (x>1){
+        card.classList.add('speakers_visibility','no_padding');
+         }
+    card.appendChild(info_div);     
     parent.appendChild(card);
     parentElement.appendChild(parent);
-    }
-
-    // ------- after creating all elements append everything to the div in the html
-    
   
-}
+    }
+    const btn_div= document.createElement('div');
+    btn_div.classList.add('btn_div');
+    const buttonMore = document.createElement('button');
+    buttonMore.textContent="MORE";
+    buttonMore.classList.add('button_more');
+    const img_arrow= document.createElement('img');
+    img_arrow.src="images/arrow_down.png";
+    buttonMore.appendChild(img_arrow);
+    btn_div.appendChild(buttonMore);
+    parentElement.appendChild(btn_div); 
+  
+}   // function closes
+
 
 document.addEventListener('DOMContentLoaded',fetauredSpeakers);

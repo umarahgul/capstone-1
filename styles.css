@@ -26,6 +26,8 @@ header {
     margin:10px;
 }
 
+
+
 #heroPage {
    
      background-image: url("images/mobile_intro_bg.png");
@@ -39,7 +41,7 @@ header {
      color:#EC5242;
 }
 #hero_h1 {
-  color:#EC5242;
+
   padding-left: 1rem;
   font-weight: 900;
   font-size: 2rem;
@@ -50,7 +52,9 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    background-image: url(./img/backgrounds/titlebackground.jpeg);
+    background-image: url(images/titlebackground.jpeg);
+
+
   
 }
 
@@ -73,6 +77,14 @@ font-size: 1 rem;
   width:100%;
   color:#D3D3D3;
  }
+.heading_div {
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap:5%;
+
+}
 
 #main_heading {
   text-align: center;
@@ -93,10 +105,16 @@ white-space: nowrap;
   margin-bottom:16%;
 }
 
+.speakers_visibility{
+  display: none;
+}
+
+
 #divider {
-  border:solid #EC5242;
+  border:solid #EC5242 1px;
   width:20%;
-  margin-left:38%;
+
+  
 }
 
 .display_desktop{
@@ -143,7 +161,7 @@ white-space: nowrap;
   display:none;
   background-color:#5c5858; 
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   padding: 7.125rem 1.5rem;
   width: 100%;
   height: 750px;
@@ -152,7 +170,7 @@ white-space: nowrap;
   opacity: 0.8;
   top: 0;
   padding-top: 5px;
-  z-index: 9998;
+  z-index: 9999;
 
 }
 .popmenu-list {
@@ -165,10 +183,10 @@ white-space: nowrap;
   gap: 18px;
   align-items: flex-start;
   z-index:9999;
-  margin-left:35% ;
+  margin-left:3% ;
 }
 .popmenu-list > .menu-list {
- color:black;
+
  list-style: none;
  font-weight:600;
  font-size: 2rem;
@@ -176,13 +194,181 @@ white-space: nowrap;
 }
 .popmenu-list > .menu-list > a{
   text-decoration: none;
-  color:#D3D3D3;
+  color:#EC5242;
+  font-style: solid;
 }
 
 #closebtn {
   margin-top:0;
   margin-right:0;
   margin-left:90%;
+}
+
+.speakers {
+padding:10%;
+
+}
+
+.btn_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.button_more {
+  padding:3%;
+  background-color:#fff;
+  border:solid #5c5858 1px;
+  width:70%;
+  margin: 5%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  gap:3%; 
+}
+.speakerDiv{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5%;
+  padding:10%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.info_div {
+  display:flex;
+  flex-direction: column;
+  justify-content:left;
+  gap:5%;
+  border: solid red;
+
+}
+.info_div .name {
+  color:#272A31;
+  font-size: 2rem;
+}
+.info_div > .about {
+  color: #EC5242;
+  font-style: italic;
+}
+
+.info_div > .achieve {
+  color:#5c5858;
+  font-size: 0.75rem;
+}
+
+
+/* -------------- styling for the about page begins here */
+/*  style for description on about page*/
+#desc_about {
+   background-color:#fff;
+   border:solid #5c5858 1px;
+   color:#5c5858;
+   padding:5%;
+   margin:4%;
+   text-align:center;
+}
+
+/* nex lines describing contact */
+#contact {
+  text-align: center;
+  padding:5%;
+  color:#5c5858;
+}
+#mailto {
+  color:#5c5858;
+  text-align: center;
+}
+#mailto a {
+
+  color:#272A31;
+  font-weight: 600;
+}
+
+
+
+
+
+/*   beginning second article of heropage about.html  */
+.about_2 {
+  background-color:#fff;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:5%;
+}
+
+.desc_about2{
+  background-color:#fff;
+  color:#5c5858;
+  padding:5%;
+  margin:4%;
+  text-align:center;
+  padding:8%;
+  
+}
+
+#img_logo {
+ 
+  width:80%;
+  border:solid #b6b1b1;
+  margin:10%;
+}
+
+/*   the last about section */
+.about_last {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5%;
+
+}
+
+
+
+.img_box {
+
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+gap:10%;
+
+}
+
+.summit_image {
+  width:90%;
+  padding:2%;
+}
+
+
+#partners {
+  background-color: #414246;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width:100%;
+  color:#D3D3D3;
+  padding:5%;
+
+}
+
+#partners img {
+  max-width: 100%;
+  height:auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -198,7 +384,7 @@ white-space: nowrap;
   gap: 10%;
   justify-content:right;
   list-style: none;
-  border: solid red;
+  
   width:100%;
   
 
@@ -244,4 +430,9 @@ white-space: nowrap;
     padding-top:10%;
     padding-bottom:10%;
 }
+
+.speakers_visibility {
+  display: block;
+}
+
 }
