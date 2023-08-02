@@ -1,7 +1,8 @@
 
 // ---------- functions to open and close the hamburger men-------//
 function openNav() {
-    document.getElementById('hamburgerMenu').style.display = 'block';}
+    document.getElementById('hamburgerMenu').style.display = 'block';
+    }
 
     function closeNav() {
         document.getElementById('hamburgerMenu').style.display = 'none';} 

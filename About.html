@@ -12,27 +12,45 @@
 
 <body>
 
+    <header>
+        <div id="black-header " class="display_desktop"> 
+            <ul class="menu-black">
+               
+                <li><img src="images/facebook.png"></li>
+                <li><img src="images/twitter.png"></li>
+                <li>Logout</li>
+                <li>Mypage</li>
+                <li>Korean</li>
+            </ul>
+            </div>
+        <nav class="display_desktop navigation">
+            
+            <ul class="desktop_menu">
+                <li> <img src="images/logo.png" class="logo"></li>
+                <li>About</li>
+                <li>Program</li>
+                <li>Join</li>
+                <li>Sponsor</li>
+                <li>News</li>
+                <li ><div id="CCampgain">CC Campaign</div></li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+
+
+
+
     <section id="heroPage">
-        <div id="black-header" class="display_desktop"> </div>
-        <header >
+        
+        <header id="mobile-header" class="mobile_display">
             <img src="images/bars (2).png" onclick="openNav()" class="display_mobile">
+            </header>
 
-            <nav class="display_desktop navigation">
-                <img src="images/logo.png" class="logo">
-                <ul class="desktop_menu">
-                    <li>About</li>
-                    <li>Program</li>
-                    <li>Join</li>
-                    <li>Sponsor</li>
-                    <li>News</li>
-                </ul>
-
-            </nav>
-        </header>
-
-        <article class="hero">
-            <h3>"We welcome the readers of the world"</h3>
-            <h1 id="hero_h1">Digital Library Readers' Conference 2023 </h1>
+        <article class="hero_about">
+            <h3 class="display_mobile">"We welcome the readers of the world"</h3>
+            <h1 id="hero_h2" >Digital Readers'<br> Conference 2023 </h1>
             <p id="desc_about">
                 The Global Summit brings together the community of
                 experts, academics, and activists who comprise the Creative
@@ -41,8 +59,10 @@
                 <!-- who want to work with us on shared projects that advance the cause of the Commons, free culture and open knowledge. So if you're active and engaged in the worlds of open content and knowledge - free software advocates, wikipedians, Open knowledge, galleries, libraries, museums,
              archives, governments and foundations, lawyers, and activists - we hope you'll consider joining us this year to build a stronger, more vibrant commons together -->
             </p>
+            <div class="about_container">
             <div id="contact"> Please contact us per Email for any further questions about CC global Summit 2015!</div>
             <div id="mailto"><a href="mailto:umarah.gul@gmail.com">umarah.gul@gmail.com</a></div>
+            </div>
         </article>
 
         <section id="hamburgerMenu">
@@ -58,43 +78,55 @@
       </section>  
 
         <article class="about_2">
+            
 
-            <h2 >Creative Commons<br> Global Summit 2015</h2>
+            <h2 class="about_h2">Creative Commons<br> Global Summit 2015</h2>
 
-            <div id="divider"></div>
+            <div class="divider"></div>
 
 
             <p class="desc_about2">The logo of the CC Global Summit was decided
                 through the logo competition from 8.June to 7.July. </p>
+                <p class="display_desktop">After online voting and Selection Committee's judging process, the logo from Naresh Agrawal won the prize.<br>
+                After consultaion with Mr. Agrawal  we optimized the prize-winning-logo for this year's summit as follwoing. </p>
+
 
             <img src="images/logo.png" id="img_logo"/>
 
+        
+         <div class="gray_divider"></div>
 
 
-
+              <div class="lower">
             <h2> See the past CC Global Summits</h2>
 
             <div class="divider"></div>
 
             <p class="desc_about2">take a look at the last two global Summits which took place<br> in Buenos Aires and
                 in Warsaw </p>
+
+
                 <div class="img_box">
+
             <img src="images/summit1.png" class="summit_image">
             <img src="images/summit2.png" class="summit_image">
                 </div>
-
-
+            </div>
+    
         </article>
 
     </section>
-   <section>
-      <div id="partners">
+
+   <section class="footer-partner ">
+      <div id="partners" class="display_mobile">
         <h3 id="partners">Partners</h3>
         <div class="divider"></div>
         <img src="images/partners.png">
        
       </div> 
-      <footer class="footer">
+
+      <footer class="footer_about">
+        <img src="images/logo_cck_w_208x35.png" class="display_desktop">
         <img src="images/cck-logo1.png">
         <h4>2015 Creative Commons Korea <br> Some Rights Reserved</h4>
     </footer>
