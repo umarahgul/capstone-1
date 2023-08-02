@@ -77,6 +77,10 @@ function fetauredSpeakers() {
 
     parentElement.appendChild(speakerDiv);
      
+    const layout=document.createElement('div');
+    layout.classList.add('layout');
+   
+
     for (let x=0; x<speakers.length; x += 1){ 
    
     
@@ -116,21 +120,24 @@ function fetauredSpeakers() {
         card.classList.add('speakers_visibility');
          }
 
-
-         card.appendChild(info_div); 
-         parent.appendChild(card); 
+         card.appendChild(info_div);
+         layout.appendChild(card);
+         parent.appendChild(layout); 
          parentElement.appendChild(parent);
     
    
     }
 
-  
+   
 
     const btn_div= document.createElement('div');
     btn_div.classList.add('btn_div');
     const buttonMore = document.createElement('button');
     buttonMore.textContent="MORE";
+   btn_div.classList.add('display_mobile');
     buttonMore.classList.add('button_more');
+    
+   
     const img_arrow= document.createElement('img');
     img_arrow.src="images/arrow_down.png";
     buttonMore.appendChild(img_arrow);
