@@ -347,11 +347,9 @@ body {
   margin: 4%;
   text-align: center;
 }
-.speakers_visibility {
-  
-  
-  display:flex !important;
-}
+
+
+
 /* nex lines describing contact */
 #contact {
   text-align: center;
@@ -530,14 +528,14 @@ body {
   }
 
   .display_desktop {
-    display: block !important;
+    display: flex !important;
   }
 
   .desktop_menu {
     display: flex;
     flex-direction: row;
     list-style: none;
-    border: solid green;
+
 
 
 
@@ -549,7 +547,11 @@ body {
    background-color: #EC5242;
 
   }
-
+  .speakers_visibility {
+  
+  
+    display:flex !important;
+  }
 
   .logo-div {
     border: solid red;
@@ -557,7 +559,7 @@ body {
 
   .desktop_menu li .logo {
     margin-left: 50% !important;
-    border: solid green;
+;
   }
 
   .desktop_menu li {
@@ -586,10 +588,7 @@ body {
 
   }
 
-  /* #black-header ul li img {
-    max-width:2%;
-    height:auto;
-  } */
+ 
 
   header {
     width: 100%;
@@ -599,10 +598,7 @@ body {
   .navigation {
     display: flex;
     flex-direction: row;
-
     padding: 0;
-    border: solid red;
-
 
   }
 
@@ -833,10 +829,12 @@ body {
     color: #272A31;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
-    gap: 5%;
+    gap: 10%;
     padding: 5%;
+    background-color:#D3D3D3;
+
   }
 
   .footer-desktop img {
@@ -844,8 +842,8 @@ body {
     height: auto;
   }
 
-  .footerinfo {
-    width: 50%;
+  .footer_info {
+    margin-left:3%;
   }
 
   /*  ---------------------------  About.html desktop version ------------------- */
@@ -949,8 +947,8 @@ body {
   #heroPage .hero {
     display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align children to the start of the container (left) */
-  align-items: flex-start; /* Align children to the start of the cross axis (left) */
+  justify-content: flex-start; 
+  align-items: flex-start; 
   text-align: left; 
   }
 
@@ -959,13 +957,23 @@ body {
  }
 #hero_h1 {
   margin-left:0;
-  border:solid red;
+
  }
- .footer_desktop {
+ #footer-desktop {
  display:flex;
+ flex-direction: row;
  justify-content: center;
+ align-items: center;
+
+
+ }
+
+ #footer-desktop img {
+   width:10%;
+   height:auto;
  }
 .footer_info {
-  float:right;
+ 
+  width:50%;
 }
 }
