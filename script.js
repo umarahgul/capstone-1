@@ -89,7 +89,7 @@ function fetauredSpeakers() {
 
     const card = document.createElement('div');
     card.classList.add('card');
-   //  card.id='card_speaker';
+    card.id='card_speaker';
    //  parent.appendChild(card);
 
     const image= document.createElement('img');
@@ -119,6 +119,8 @@ function fetauredSpeakers() {
    
     if (x>1){
         card.classList.add('speakers_visibility');
+    
+
          }
 
          card.appendChild(info_div);
