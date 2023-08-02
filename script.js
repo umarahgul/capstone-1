@@ -53,24 +53,6 @@ const speakers = [
 
 ];
 
- let counter =0;
-// if media screen is mobile counter =1;
-//   in the function check if the counter is 1 append the first two. 
-// else append all
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Get the screen width
-    const screenWidth = window.innerWidth; 
-    console.log(screenWidth);
-     if (screenWidth<768)
-     {
-        counter=1;
-     }  
-     else {
-        counter=0;
-     }
-   });
-
 
 function fetauredSpeakers() {
 
@@ -89,7 +71,8 @@ function fetauredSpeakers() {
     
 
     const divider=document.createElement('div');
-    divider.setAttribute('id','divider');
+   //  divider.setAttribute('id','divider');
+   divider.classList.add('divider');
     speakerDiv.appendChild(divider);
 
     parentElement.appendChild(speakerDiv);
@@ -101,13 +84,13 @@ function fetauredSpeakers() {
 
     const card = document.createElement('div');
     card.classList.add('card');
-    card.id='card_speaker';
-    parent.appendChild(card);
+   //  card.id='card_speaker';
+   //  parent.appendChild(card);
 
     const image= document.createElement('img');
     image.src=speakers[x].image;
     console.log(speakers[x].image);
-    image.classList.add('Profile-image');
+    image.classList.add('profile-image');
     card.appendChild(image);
 
     const info_div= document.createElement('div');
@@ -127,15 +110,22 @@ function fetauredSpeakers() {
     achieve.textContent=speakers[x].achievments;
     achieve.classList.add('achieve');
     info_div.appendChild(achieve);
+    
    
     if (x>1){
-        card.classList.add('speakers_visibility','no_padding');
+        card.classList.add('speakers_visibility');
          }
-    card.appendChild(info_div);     
-    parent.appendChild(card);
-    parentElement.appendChild(parent);
-  
+
+
+         card.appendChild(info_div); 
+         parent.appendChild(card); 
+         parentElement.appendChild(parent);
+    
+   
     }
+
+  
+
     const btn_div= document.createElement('div');
     btn_div.classList.add('btn_div');
     const buttonMore = document.createElement('button');

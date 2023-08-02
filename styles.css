@@ -17,15 +17,19 @@ html { scroll-behavior: smooth; }
   }
   
 
-header {
+#mobile-header {
     
     display:flex;
     flex-direction: row;
-    justify-content: left;
-
-    margin:10px;
+    justify-content:flex-start;
+    margin:2%;
 }
+#mobile-header img {
+  max-width: 60%;
+  height:auto;
+  margin-bottom:10%;
 
+}
 
 
 #heroPage {
@@ -44,21 +48,20 @@ header {
 
   padding-left: 1rem;
   font-weight: 900;
-  font-size: 2rem;
-
     padding-left: 1rem;
-    font-weight: 900;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 1100;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     background-image: url(images/titlebackground.jpeg);
-
-
   
 }
 
-
+.hero h3 {
+  font-size: 2.5rem;
+  font-weight: 10;
+}
 
 #desc {
 color:#5c5858;
@@ -68,6 +71,7 @@ border:solid #fff;
 text-align: left;
 font-weight:600;
 font-size: 1 rem;
+margin:5%;
 }
 
 #main {
@@ -96,6 +100,8 @@ color:#5c5858;
 font-weight: 800;
 font-size: 2rem;
 white-space: nowrap;
+text-align: left;
+margin-left:5%;
 }
 
 #location {
@@ -103,16 +109,15 @@ white-space: nowrap;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom:16%;
+  text-align:left;
+  margin-left:5%;
 }
 
-.speakers_visibility{
-  display: none;
-}
 
 
-#divider {
+.divider {
   border:solid #EC5242 1px;
-  width:20%;
+  width:10%;
 
   
 }
@@ -121,22 +126,28 @@ white-space: nowrap;
  display: none;
 }
 
+
+
 #main_page_heading li {
 
-  background-color:gray;
+  background-color:#3C3F46;
   border: 1px solid transparent; 
   margin:5px;
   margin:10px;  
   display: flex;
   flex-direction: row;
   align-items: self-start;
+  backdrop-filter: blur;
   gap:5px;
+  padding:5%;
+ 
 }
 
 
 #main_page_heading li h3 {
   color: #EC5242;
   min-width:25%; 
+  text-align: center;
 }
 
 #main_page_heading li p  {
@@ -204,10 +215,13 @@ white-space: nowrap;
   margin-left:90%;
 }
 
-.speakers {
-padding:10%;
+/*  -------  javascript html related css -------- */
 
+ .speakers_visibility{
+ display:none important;
 }
+
+
 
 .btn_div {
   display: flex;
@@ -227,6 +241,7 @@ padding:10%;
   justify-content: center;
   gap:3%; 
 }
+
 .speakerDiv{
 
   display: flex;
@@ -234,13 +249,31 @@ padding:10%;
   justify-content: center;
   align-items: center;
   gap:5%;
-  padding:10%;
+  border:solid green;
+}
+
+.spkrs_head {
+  color:#272A31;
+  padding:5%;
+  font-size: 1.5rem;
+
+}
+.profile-image {
+  width:100%;
+  height:auto;
+  padding:3%;
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:center;
+  align-items: center;
+  gap:5%;
+  width:100%;
+  height:auto;
+  margin: 1%;
+ 
 }
 
 
@@ -248,22 +281,27 @@ padding:10%;
   display:flex;
   flex-direction: column;
   justify-content:left;
-  gap:5%;
-  border: solid red;
+  gap:3%;
 
 }
+
 .info_div .name {
   color:#272A31;
-  font-size: 2rem;
+  font-size: 1.5rem;
+   margin-bottom: 2%;
 }
 .info_div > .about {
   color: #EC5242;
   font-style: italic;
+  margin-bottom: 2%;
+
 }
 
 .info_div > .achieve {
   color:#5c5858;
   font-size: 0.75rem;
+  margin-bottom: 2%;
+ 
 }
 
 
@@ -381,8 +419,6 @@ gap:10%;
 .footer img {
   max-width:50%;
   height:auto;
-
-
 }
 
 
@@ -399,21 +435,32 @@ gap:10%;
   gap: 10%;
   justify-content:right;
   list-style: none;
-  
   width:100%;
-  
-
   }
+
   #black-header {
     background-color: #272A31;
-    height:10%;
-    margin-bottom: 20%;
+    height:20%;
+    width:100%;
   } 
+  #black-header ul li img {
+    max-width:2%;
+    height:auto;
+  }
 
-  .header {
-    margin-top:0;
+  header {
+    width:100%;
+    border: solid green;
   }
   
+  #CCampgain {
+   border:solid #EC5242 5px;
+   color:#EC5242;
+   font-weight: 500;
+   padding:0.5%;
+
+  }
+
   #heroPage {
    
     background-image: url("images/main_big.png");
@@ -446,8 +493,107 @@ gap:10%;
     padding-bottom:10%;
 }
 
-.speakers_visibility {
-  display: block;
+
+#main #divider {
+
+  width:100%
+}
+#main_page_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:0.3%;
+    
+}
+#main_page_heading li {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+/*  Styles for cards generated through javascript  */
+
+.btn_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.button_more {
+  padding:3%;
+  background-color:#fff;
+  border:solid #5c5858 1px;
+  width:70%;
+  margin: 5%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  gap:3%; 
+}
+
+.speakerDiv{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5%;
+  border:solid green;
+}
+
+.spkrs_head {
+  color:#272A31;
+  padding:5%;
+  font-size: 1.5rem;
+
+}
+.profile-image {
+  width:100%;
+  height:auto;
+  padding:3%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap:5%;
+  width:100%;
+  height:auto;
+  margin: 1%;
+ 
+}
+
+
+.info_div {
+  display:flex;
+  flex-direction: column;
+  justify-content:left;
+  gap:3%;
+
+}
+
+.info_div .name {
+  color:#272A31;
+  font-size: 1.5rem;
+   margin-bottom: 2%;
+}
+.info_div > .about {
+  color: #EC5242;
+  font-style: italic;
+  margin-bottom: 2%;
+
+}
+
+.info_div > .achieve {
+  color:#5c5858;
+  font-size: 0.75rem;
+  margin-bottom: 2%;
+ 
 }
 
 }
