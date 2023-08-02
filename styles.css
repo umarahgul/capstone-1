@@ -378,7 +378,10 @@ display:block !important;
  
   width:80%;
   border:solid #b6b1b1;
-  margin:10%;
+}
+.logo {
+  margin-bottom: 0;
+
 }
 
 /*   the last about section */
@@ -457,8 +460,11 @@ gap:10%;
   list-style: none;
   width:100%;
   padding-right:10%;
-  height:auto;
+  margin-top:0;
+  margin-bottom:0;
+
   }
+
   .desktop_menu li {
     color:#272A31;
     margin-top:1%;
@@ -466,19 +472,39 @@ gap:10%;
 
   #black-header {
     background-color: #272A31;
-    height:20%;
-    width:100%;
+    border: solid red;
+    
   } 
-  #black-header ul li img {
+
+  .menu-black {
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    gap:2%;
+  color:#D3D3D3;
+  background-color: #272A31;
+  list-style: none;
+  font-size:1rem;
+
+  }
+  /* #black-header ul li img {
     max-width:2%;
     height:auto;
-  }
+  } */
 
   header {
     width:100%;
-    border: solid green;
+
   }
-  
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    
+   
+   }
   #CCampgain {
    border:solid #EC5242 5px;
    color:#EC5242;
@@ -503,17 +529,10 @@ gap:10%;
     color:#EC5242;
     margin-bottom: 0;
     padding-bottom: 0;
-    border:solid purple 10px;
+
     
 }
-.navigation {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- width:100%;
- margin-left:10%;
 
-}
 
 .hero {padding-top:20%;
     padding-left:10%;
@@ -603,7 +622,7 @@ margin-top:5%;}
   justify-content: center;
   align-items: center;
   gap:5%;
-  border:solid green;
+
 }
 
 .spkrs_head {
