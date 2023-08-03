@@ -13,9 +13,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* padding:10px;
-    overflow:scroll; */
   font-family: 'Lato', sans-serif;
 }
 
@@ -487,7 +484,7 @@ body {
   }
 
   .logo-div {
-    border: solid red;
+    border: none;
   }
 
   .desktop_menu li .logo {
@@ -552,7 +549,6 @@ body {
     color: #ec5242;
     margin-bottom: 0;
     padding-bottom: 0;
-    border: solid green;
   }
 
   .hero {
