@@ -1,4 +1,5 @@
 // ---------- functions to open and close the hamburger men-------//
+/* eslint-disable */
 function openNav() {
   document.getElementById('hamburgerMenu').style.display = 'block';
 }
@@ -6,7 +7,7 @@ function openNav() {
 function closeNav() {
   document.getElementById('hamburgerMenu').style.display = 'none';
 }
-
+/* eslint-enable */
 // ----------Object to hold info for fetaured speakers --------//
 
 const speakers = [
