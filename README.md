@@ -59,7 +59,7 @@ Capstone 1 is an application with excellent use of responsive and mobile first m
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 ```sh
-coming soon
+ https://umarahgul.github.io/capstone-1/
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,7 +96,7 @@ Install linters for this project with:
 ### Deployment
   
   ```sh
-   https://umarahgul.github.io/Capstone-1/  
+   You can deploy the project using gitHub, html , css and javascript
 ```
  
 
