@@ -26,6 +26,15 @@ body {
   margin: 2%;
 }
 
+.footer_about img {
+  width: 50%;
+}
+
+
+.footer img {
+  max-width: 50%;
+  height: auto;
+}
 #mobile-header img {
   max-width: 60%;
   height: auto;
@@ -49,7 +58,7 @@ body {
 #hero_h1 {
   padding-left: 5%;
   font-size: 3rem;
-  font-weight: 1100;
+  font-weight: 1000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -69,7 +78,7 @@ body {
   border: solid #fff;
   text-align: left;
   font-weight: 600;
-  font-size: 1 rem;
+  font-size: 1rem;
   margin: 5%;
 }
 
@@ -135,7 +144,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: self-start;
-  backdrop-filter: blur;
+  backdrop-filter: 'blur';
   gap: 5px;
 }
 
@@ -200,7 +209,7 @@ body {
 .popmenu-list > .menu-list > a {
   text-decoration: none;
   color: #ec5242;
-  font-style: solid;
+  font-style:normal;
 }
 
 #closebtn {
@@ -404,17 +413,7 @@ body {
   font-size: 0.75rem;
 }
 
-.footer img {
-  max-width: 50%;
-  height: auto;
-}
 
-.gray_divider {
-  border: solid #edebeb 1px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 100%;
-}
 
 .hero_about {
   display: flex;
@@ -426,7 +425,7 @@ body {
 .hero_about #hero_h2 {
   font-size: 3rem;
   color: #ec5242;
-  font-weight: 1100;
+  font-weight: 1000;
   text-align: center;
 }
 
@@ -434,6 +433,9 @@ body {
   border: solid #edebeb 1px;
   margin-top: 5%;
   width: 100%;
+    margin-bottom: 5%;
+
+  
 }
 
 .lower h2 {
@@ -450,9 +452,7 @@ body {
   gap: 3%;
 }
 
-.footer_about img {
-  width: 50%;
-}
+
 
 .footer_about h4 {
   color: #5c5858;
@@ -747,8 +747,6 @@ body {
     height: auto;
   }
 
-
-
   /*  ---------------------------  About.html desktop version ------------------- */
 
   .about_container {
@@ -863,7 +861,7 @@ body {
   #hero_h1 {
     margin-left: 0;
     font-size: 3rem;
-    font-weight: 1100;
+    font-weight: 900;
     padding-left: 0;
   }
 
@@ -883,7 +881,6 @@ body {
     width: 50%;
     margin: 3%;
   }
-
 
   .seeProgram {
     color: #d3d3d3;
