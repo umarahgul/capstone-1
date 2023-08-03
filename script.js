@@ -71,7 +71,7 @@ function fetauredSpeakers() {
   speakerDiv.appendChild(heading);
 
   const divider = document.createElement('div');
-  //  divider.setAttribute('id','divider');
+
   divider.classList.add('divider');
   speakerDiv.appendChild(divider);
 
@@ -88,7 +88,7 @@ function fetauredSpeakers() {
 
     const image = document.createElement('img');
     image.src = speakers[x].image;
-    console.log(speakers[x].image);
+
     image.classList.add('profile-image');
     card.appendChild(image);
 
