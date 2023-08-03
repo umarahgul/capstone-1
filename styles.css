@@ -58,7 +58,7 @@ body {
 
 .hero h3 {
   font-size: 2.5rem;
-  font-weight: 10;
+  font-weight: 100;
   padding-left: 3%;
 }
 
@@ -205,7 +205,6 @@ body {
 
 #closebtn {
   margin-top: 10%;
-  
   margin-right: 10%;
   margin-left: 90%;
 }
@@ -499,7 +498,6 @@ body {
 
   .desktop_menu li .logo {
     margin-left: 50% !important;
-
   }
 
   .desktop_menu li {
@@ -524,8 +522,6 @@ body {
     font-size: 1rem;
     padding: 1%;
   }
-
-
 
   header {
     width: 100%;
@@ -571,12 +567,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
-    padding-left: 0;
-  }
-
-  #hero_h1 {
-    font-size: 3rem;
-    font-weight: 1100;
     padding-left: 0;
   }
 
@@ -757,9 +747,7 @@ body {
     height: auto;
   }
 
-  .footer_info {
-    margin: 3%;
-  }
+
 
   /*  ---------------------------  About.html desktop version ------------------- */
 
@@ -874,6 +862,9 @@ body {
 
   #hero_h1 {
     margin-left: 0;
+    font-size: 3rem;
+    font-weight: 1100;
+    padding-left: 0;
   }
 
   #footer-desktop {
@@ -890,7 +881,9 @@ body {
 
   .footer_info {
     width: 50%;
+    margin: 3%;
   }
+
 
   .seeProgram {
     color: #d3d3d3;
