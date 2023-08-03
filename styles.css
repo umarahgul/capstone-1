@@ -13,14 +13,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   /* padding:10px;
     overflow:scroll; */
   font-family: 'Lato', sans-serif;
 }
 
-
 #mobile-header {
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -32,12 +31,9 @@ body {
   height: auto;
   margin-bottom: 10%;
   padding: 3%;
-
 }
 
-
 #heroPage {
-
   background-image: url("images/mobile_intro_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,12 +43,10 @@ body {
   justify-content: space-evenly;
   margin-top: 10px;
   gap: 10px;
-  color: #EC5242;
+  color: #ec5242;
 }
 
 #hero_h1 {
-
-
   padding-left: 5%;
   font-size: 3rem;
   font-weight: 1100;
@@ -60,8 +54,6 @@ body {
   -webkit-text-fill-color: transparent;
   color: transparent;
   background-image: url(images/titlebackground.jpeg);
-  
-
 }
 
 .hero h3 {
@@ -82,14 +74,12 @@ body {
 }
 
 #main {
-  background-color: #272A31;
+  background-color: #272a31;
   background-image: url('images/pattern_bg.png');
   background-repeat: repeat;
   width: 100%;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
-
-
 
 .heading_div {
   display: flex;
@@ -97,7 +87,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5%;
-
 }
 
 #main_heading {
@@ -123,16 +112,13 @@ body {
   margin-left: 5%;
 }
 
-
-
 .divider {
-  border: solid #EC5242 1px;
+  border: solid #ec5242 1px;
   width: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  background-color: #EC5242;
+  background-color: #ec5242;
 }
-
 
 .display_desktop {
   display: none !important;
@@ -142,12 +128,9 @@ body {
   display: block !important;
 }
 
-
 #main_page_heading li {
-
-  background-color: #3C3F46;
+  background-color: #3c3f46;
   border: 1px solid transparent;
-
   margin: 10px;
   display: flex;
   flex-direction: row;
@@ -156,24 +139,21 @@ body {
   gap: 5px;
 }
 
-
 #main_page_heading li h3 {
-  color: #EC5242;
+  color: #ec5242;
   min-width: 25%;
   text-align: center;
-
 }
 
 #main_page_heading li p {
   width: 60%;
-
 }
 
 #join_button {
-  color: #D3D3D3;
+  color: #d3d3d3;
   font-size: 1.2rem;
   font-weight: 600;
-  background-color: #EC5242;
+  background-color: #ec5242;
   width: 80%;
   padding: 8%;
   border: none;
@@ -196,7 +176,6 @@ body {
   top: 0;
   padding-top: 5px;
   z-index: 9999;
-
 }
 
 .popmenu-list {
@@ -212,23 +191,21 @@ body {
   margin-left: 3%;
 }
 
-.popmenu-list>.menu-list {
-
+.popmenu-list > .menu-list {
   list-style: none;
   font-weight: 600;
   font-size: 2rem;
-
 }
 
-.popmenu-list>.menu-list>a {
+.popmenu-list > .menu-list > a {
   text-decoration: none;
-  color: #EC5242;
+  color: #ec5242;
   font-style: solid;
 }
 
 #closebtn {
   margin-top: 10%;
-  ;
+  
   margin-right: 10%;
   margin-left: 90%;
 }
@@ -236,8 +213,6 @@ body {
 /*  -------  javascript html related css -------- */
 
 .speakers_visibility {
-  
-  
   display: none !important;
 }
 
@@ -248,14 +223,12 @@ body {
   align-items: center;
 }
 
-
 .btn_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 7%;
-
 }
 
 .button_more {
@@ -271,20 +244,17 @@ body {
 }
 
 .speakerDiv {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5%;
-
 }
 
 .spkrs_head {
-  color: #272A31;
+  color: #272a31;
   padding: 5%;
   font-size: 1.5rem;
-
 }
 
 .profile-image {
@@ -302,41 +272,36 @@ body {
   width: 100%;
   height: auto;
   margin: 1%;
-
 }
-
 
 .info_div {
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 3%;
-
 }
 
 .info_div .name {
-  color: #272A31;
+  color: #272a31;
   font-size: 1.5rem;
   margin-bottom: 2%;
 }
 
-.info_div>.about {
-  color: #EC5242;
+.info_div > .about {
+  color: #ec5242;
   font-style: italic;
   margin-bottom: 2%;
-
 }
 
-.info_div>.achieve {
+.info_div > .achieve {
   color: #5c5858;
   font-size: 0.75rem;
   margin-bottom: 2%;
-
 }
 
-
 /* -------------- styling for the about page begins here */
-/*  style for description on about page*/
+
+/*  style for description on about page */
 #desc_about {
   background-color: #fff;
   border: solid #b9b3b3 1px;
@@ -345,8 +310,6 @@ body {
   margin: 4%;
   text-align: center;
 }
-
-
 
 /* nex lines describing contact */
 #contact {
@@ -361,14 +324,9 @@ body {
 }
 
 #mailto a {
-
-  color: #272A31;
+  color: #272a31;
   font-weight: 600;
 }
-
-
-
-
 
 /*   beginning second article of heropage about.html  */
 .about_2 {
@@ -383,15 +341,12 @@ body {
 .desc_about2 {
   background-color: #fff;
   color: #5c5858;
-  padding: 5%;
   margin: 4%;
   text-align: center;
   padding: 8%;
-
 }
 
 #img_logo {
-
   width: 80%;
   border: solid #e5e2e2;
   padding: 8% 15%;
@@ -400,7 +355,6 @@ body {
 .logo {
   margin-right: 20px;
   padding: 0;
-
 }
 
 /*   the last about section */
@@ -410,26 +364,20 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5%;
-
 }
 
-
-
 .img_box {
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   gap: 10%;
-
 }
 
 .summit_image {
   width: 90%;
   padding: 2%;
 }
-
 
 #partners {
   background-color: #414246;
@@ -439,9 +387,8 @@ body {
   align-items: center;
   gap: 5%;
   width: 100%;
-  color: #D3D3D3;
+  color: #d3d3d3;
   padding: 5%;
-
 }
 
 #partners img {
@@ -470,34 +417,29 @@ body {
   width: 100%;
 }
 
-
 .hero_about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .hero_about #hero_h2 {
   font-size: 3rem;
-  color: #EC5242;
+  color: #ec5242;
   font-weight: 1100;
   text-align: center;
-
 }
 
 .gray_divider {
   border: solid #edebeb 1px;
   margin-top: 5%;
-
   width: 100%;
 }
 
 .lower h2 {
   text-align: center;
-  color: #272A31;
-
+  color: #272a31;
 }
 
 .footer_about {
@@ -510,21 +452,15 @@ body {
 }
 
 .footer_about img {
-
-  width:50%;
-
+  width: 50%;
 }
 
 .footer_about h4 {
   color: #5c5858;
-  width:60%;
-
-
+  width: 60%;
 }
 
 @media screen and (min-width: 1024px) {
-
-
   .display_mobile {
     display: none !important;
   }
@@ -539,25 +475,22 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap:20%;
+    gap: 20%;
   }
 
-   .logo {
-  margin-right:20%;
-  margin-left: 0;
-
+  .logo {
+    margin-right: 20%;
+    margin-left: 0;
   }
 
   .divider-main {
-   width:20px;
-   color:#EC5242;
-   background-color: #EC5242;
-
+    width: 20px;
+    color: #ec5242;
+    background-color: #ec5242;
   }
+
   .speakers_visibility {
-  
-  
-    display:flex !important;
+    display: flex !important;
   }
 
   .logo-div {
@@ -566,65 +499,57 @@ body {
 
   .desktop_menu li .logo {
     margin-left: 50% !important;
-;
+
   }
 
   .desktop_menu li {
-    color: #272A31;
+    color: #272a31;
     margin-top: 1%;
-
     padding: 0.5%;
   }
 
   #black-header {
-    background-color: #272A31;
-
-
+    background-color: #272a31;
   }
 
   .menu-black {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    width:100%;
+    width: 100%;
     gap: 2%;
-    color: #D3D3D3;
-    background-color: #272A31;
+    color: #d3d3d3;
+    background-color: #272a31;
     list-style: none;
     font-size: 1rem;
     padding: 1%;
-
   }
 
- 
+
 
   header {
     width: 100%;
-
   }
 
-   .navigation {
+  .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap:30%;
-    width:100%;
-  } 
+    gap: 30%;
+    width: 100%;
+  }
 
   #CCampgain {
-    border: solid #EC5242 5px;
-    color: #EC5242;
+    border: solid #ec5242 5px;
+    color: #ec5242;
     font-weight: 500;
     padding: 0.5%;
-
-
   }
 
   /* ------styling index page  */
 
   #heroPage {
-
     background-image: url("images/main_big.png");
     background-repeat: no-repeat;
     width: 100%;
@@ -634,13 +559,11 @@ body {
     align-items: center;
     margin-top: 10px;
     gap: 10px;
-    color: #EC5242;
+    color: #ec5242;
     margin-bottom: 0;
     padding-bottom: 0;
     border: solid green;
-
   }
-
 
   .hero {
     display: flex;
@@ -654,9 +577,8 @@ body {
   #hero_h1 {
     font-size: 3rem;
     font-weight: 1100;
-    padding-left:0;
+    padding-left: 0;
   }
-
 
   #desc {
     padding: 2%;
@@ -676,14 +598,11 @@ body {
 
   #main {
     margin-top: 0;
-
   }
 
   #main .divider {
-
-    width: 100%
+    width: 100%;
   }
-
 
   #main_page_heading {
     display: flex;
@@ -692,18 +611,14 @@ body {
     align-items: center;
     margin: 10%;
     margin-top: 3%;
-
   }
 
   #main_page_heading li p {
     width: 100%;
     text-align: center;
-
   }
 
-
   #main_page_heading li {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -712,7 +627,6 @@ body {
     min-height: 100%;
     padding: 2%;
     margin-left: 0.15%;
-
   }
 
   /*  Styles for cards generated through javascript  */
@@ -722,7 +636,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .button_more {
@@ -738,20 +651,16 @@ body {
   }
 
   .speakerDiv {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
   }
 
   .spkrs_head {
-    color: #272A31;
+    color: #272a31;
     padding: 5%;
     font-size: 1.5rem;
-
   }
 
   .profile-image {
@@ -763,8 +672,10 @@ body {
   .layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     /* Two columns */
     grid-template-rows: repeat(3, 1fr);
+
     /* Three rows */
     gap: 10px;
     padding: 20%;
@@ -782,56 +693,48 @@ body {
     width: 100%;
     height: auto;
     margin: 5%;
-
   }
-
 
   .info_div {
     display: flex;
     flex-direction: column;
     justify-content: left;
     gap: 3%;
-
   }
 
   .info_div .name {
-    color: #272A31;
+    color: #272a31;
     font-size: 1.5rem;
     margin-bottom: 2%;
   }
 
-  .info_div>.about {
-    color: #EC5242;
+  .info_div > .about {
+    color: #ec5242;
     font-style: italic;
     margin-bottom: 2%;
-
   }
 
-  .info_div>.achieve {
+  .info_div > .achieve {
     color: #5c5858;
     font-size: 0.75rem;
     margin-bottom: 2%;
-
   }
-
 
   .partner {
     width: 100%;
-    height:auto;
-    display:flex;
+    height: auto;
+    display: flex;
     flex-direction: column;
-
   }
 
   .partner_title {
-    color: #D3D3D3;
+    color: #d3d3d3;
     text-align: center;
     background-color: #414246;
   }
 
   .partner img {
-
-    width: 100%
+    width: 100%;
   }
 
   .partner h3 {
@@ -839,16 +742,14 @@ body {
   }
 
   .footer-desktop {
-    background-color: #D3D3D3;
-    color: #272A31;
+    color: #272a31;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     gap: 10%;
     padding: 5%;
-    background-color:#D3D3D3;
-
+    background-color: #d3d3d3;
   }
 
   .footer-desktop img {
@@ -857,11 +758,10 @@ body {
   }
 
   .footer_info {
-    margin:3%;
+    margin: 3%;
   }
 
   /*  ---------------------------  About.html desktop version ------------------- */
-
 
   .about_container {
     display: flex;
@@ -879,7 +779,6 @@ body {
   /* .mailto */
   .lower {
     background-color: #fff;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -888,19 +787,18 @@ body {
   }
 
   .about_h2 {
-    color: #272A31;
+    color: #272a31;
   }
 
   #img_logo {
     max-width: 40%;
     height: auto;
-
   }
 
   .desc_about2 {
-    padding-top:0;
-    margin-top:0;
-    margin-bottom:0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .img_box {
@@ -911,30 +809,27 @@ body {
   }
 
   .about_2 {
-
     padding: 5%;
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:2%;
-
+    gap: 2%;
   }
 
   .about_2 h2 {
-    color: #272A31;
+    color: #272a31;
   }
 
   .gray_divider {
     border: solid #edebeb 1px;
     margin-top: 5%;
-
     width: 100%;
   }
 
   .footer_about {
-    background-color: #272A31;
+    background-color: #272a31;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -942,7 +837,6 @@ body {
     width: 100%;
     gap: 5%;
     padding: 10%;
-
   }
 
   .footer {
@@ -952,70 +846,69 @@ body {
     color: #5c5858;
     padding: 10%;
     font-size: 0.75rem;
-
   }
 
   .footer-partner {
     width: 100%;
     height: auto;
     padding: 5%;
-    background-color: #272A31;
+    background-color: #272a31;
   }
 
   .footer_about h4 {
-    color: #D3D3D3;
+    color: #d3d3d3;
   }
-
 
   /*     index.html  */
   #heroPage .hero {
     display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  text-align: left; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
   }
 
- .hero h3 {
-  padding-left:0;
- }
-#hero_h1 {
-  margin-left:0;
+  .hero h3 {
+    padding-left: 0;
+  }
 
- }
- #footer-desktop {
- display:flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
+  #hero_h1 {
+    margin-left: 0;
+  }
 
+  #footer-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
- }
+  #footer-desktop img {
+    width: 10%;
+    height: auto;
+  }
 
- #footer-desktop img {
-   width:10%;
-   height:auto;
- }
-.footer_info {
- 
-  width:50%;
-}
-.seeProgram {
-color:#D3D3D3;
-text-align: center;
-padding:3%;
-margin-left:40%;
+  .footer_info {
+    width: 50%;
+  }
 
-}
-#desc_about { 
-  width:60%;
-}
-.hero_about {
-  padding-bottom:0;
-}
-.about-link {
-text-decoration: none;
-color: #EC5242;
+  .seeProgram {
+    color: #d3d3d3;
+    text-align: center;
+    padding: 3%;
+    margin-left: 40%;
+  }
 
-}
+  #desc_about {
+    width: 60%;
+  }
+
+  .hero_about {
+    padding-bottom: 0;
+  }
+
+  .about-link {
+    text-decoration: none;
+    color: #ec5242;
+  }
 }
