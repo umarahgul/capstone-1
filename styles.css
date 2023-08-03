@@ -30,11 +30,11 @@ body {
   width: 50%;
 }
 
-
 .footer img {
   max-width: 50%;
   height: auto;
 }
+
 #mobile-header img {
   max-width: 60%;
   height: auto;
@@ -209,7 +209,7 @@ body {
 .popmenu-list > .menu-list > a {
   text-decoration: none;
   color: #ec5242;
-  font-style:normal;
+  font-style: normal;
 }
 
 #closebtn {
@@ -413,8 +413,6 @@ body {
   font-size: 0.75rem;
 }
 
-
-
 .hero_about {
   display: flex;
   flex-direction: column;
@@ -433,9 +431,7 @@ body {
   border: solid #edebeb 1px;
   margin-top: 5%;
   width: 100%;
-    margin-bottom: 5%;
-
-  
+  margin-bottom: 5%;
 }
 
 .lower h2 {
@@ -451,8 +447,6 @@ body {
   padding: 8%;
   gap: 3%;
 }
-
-
 
 .footer_about h4 {
   color: #5c5858;
