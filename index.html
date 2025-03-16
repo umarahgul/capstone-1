@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
+</head>
+
+<body>
+
+    <!-- ---------------section hero page--------------- -->
+
+
+
+    <header>
+        <div id="black-header " class="display_desktop">
+            <ul class="menu-black">
+
+                <li><img src="images/facebook.png"></li>
+                <li><img src="images/twitter.png"></li>
+                <li>Logout</li>
+                <li>Mypage</li>
+                <li>Korean</li>
+            </ul>
+        </div>
+    </header>
+
+    <header>
+        <nav class="display_desktop navigation">
+
+            <div class="logo-div"> <img src="images/logo.png" class="logo"></div>
+
+
+            <ul class="desktop_menu">
+                <!-- <li><img src="images/logo.png" class="logo"></li> -->
+                <li><a href="About.html" class="about-link">About</a></li>
+                <li>Program</li>
+                <li>Join</li>
+                <li>Sponsor</li>
+                <li>News</li>
+                <li>
+                    <div id="CCampgain">CCampaign</div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="heroPage">
+        <header id="mobile-header" class="mobile_display">
+            <img src="images/bars (2).png" onclick="openNav()" class="display_mobile">
+        </header>
+        <article class="hero">
+            <h3>"welcome! Reading World"</h3>
+            <h1 id="hero_h1">Digital Library<br>Readers' Conference 2023 </h1>
+            <p id="desc">
+                A joyful celebration believing in the value of openness and sharing, creating a positive change
+                with people from over 80 countries is taking place in October, in Korea.
+            </p>
+            <div id="date">2015.10.15(THU) ~16(FRI)</div>
+            <div id="location">@National Museum of Korea Art Center Nabi and more</div>
+        </article>
+    </section>
+
+    <!--   -----------------section holding main -----  -->
+
+    <section id="main">
+        <div class="heading_div">
+            <h3 id="main_heading">Main Program</h3>
+        </div>
+
+        <div class="divider display_mobile"></div>
+        <div class="divider-main display_desktop"></div>
+
+        <ul id="main_page_heading">
+            <li><img src="images/program_icon_01.png">
+                <h3>lecture</h3>
+                <p>listen to the speakers form various countries about the messages of sharing and opening</p>
+            </li>
+            <li><img src="images/program_icon_02.png">
+                <h3>CC Exhibition</h3>
+                <p>Appreciate creations applying CC license of artists,organized from Art Center Nabi</p>
+            </li>
+            <li><img src="images/program_icon_03.png">
+                <h3>Forum</h3>
+                <p>Have the time to share your thoughts and opinions with experts for each topic </p>
+            </li>
+            <li><img src="images/program_icon_04.png">
+                <h3>Workshop</h3>
+                <p>try creating your own work using open source license rather than just watching </p>
+            </li>
+            <li><img src="images/program_icon_05.png">
+                <h3>CC Ignite</h3>
+                <p>Get opportunities network with affiliates around the world,also after the summit.</p>
+            </li>
+        </ul>
+        <button id="join_button" class="display_mobile">Join CC Global Summit 2015</button>
+        <a href="#" class="seeProgram display_desktop">SEE THE WHOLE PROGRAM </a>
+
+    </section>
+
+
+
+
+    <!-- section holding the hamburger menu -->
+
+    <section id="hamburgerMenu">
+
+        <img src="images/close_button.png" id="closebtn" onclick="closeNav()">
+        <ul class="popmenu-list">
+            <li onclick="closeNav()" class="menu-list"><a href="#heroPage">Home</a></li>
+            <li onclick="closeNav()" class="menu-list"><a href="About.html">About</a></li>
+
+        </ul>
+
+
+    </section>
+
+
+    <!--  -------------section featured speakers in javascript------------- -->
+    <section id="featured_speakers"> </section>
+
+
+    <!--section containinf partners in the end  -->
+
+    <section class="partner display_desktop">
+        <h3 class="partner_title">Partner</h3>
+        <img src="images/partners2.png">
+    </section>
+
+
+
+    <!-- class="" -->
+    <footer id="footer-desktop" class="display_desktop">
+
+        <img src="images/cck-logo1.png">
+
+        <div class="footer_info">
+            <h6>2015 Creative Commons korea . Some Rights Reserved</h6>
+            <p class="korean-text">달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브
+                커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다. 자세한 이용기능
+                내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
